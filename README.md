@@ -43,8 +43,8 @@
 
 1. **Клонируйте репозиторий:**
    ```bash
-   git clone https://github.com/your-username/your-repository.git
-   cd your-repository
+   git clone https://github.com/Just-Danek/Seminars-list.git
+   cd Seminars-list
    ```
 
 2. **Установите зависимости:**
@@ -59,6 +59,7 @@
    ```
 
    --- `json-server` будет работать на [http://localhost:3001](http://localhost:3001).
+   --- Приложение будет работать на [http://localhost:5173](http://localhost:5173).
 
 4. **Дополнительные зависимости:**
    Проект использует следующие библиотеки:
@@ -72,7 +73,7 @@
 
 Этот проект распространяется под лицензией **MIT**. Это означает, что вы можете свободно использовать, изменять и распространять этот код при условии сохранения уведомления о лицензии.
 
-С полным текстом лицензии можно ознакомиться в файле [LICENSE](https://github.com/Just-Danek/Seminars-list/blob/main/LICENSE.txt).
+С полным текстом лицензии можно ознакомиться в файле [LICENSE](https://github.com/Just-Danek/Seminars-list/blob/main/LICENSE).
 
 ---
 

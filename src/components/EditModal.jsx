@@ -71,15 +71,29 @@ export default function EditModal({ isOpen, onConfirm, onRequestClose, selectedS
 
         const titleValidation1 = (title.replace(/\s/g, "")).length !== 0
         const titleValidation2 = title[0] !== " "
-        if (!titleValidation1 || !titleValidation2 ) {
-            console.error("Заголовок не корректен")
+        const titleValidation3 = title.length <= 50
+        if (!titleValidation1) {
+            console.error("Заголовок не должен быть пустым")
+            return false
+        } else if (!titleValidation2) {
+            console.error("Заголовок не должен начинаться с пробела")
+            return false
+        } else if (!titleValidation3) {
+            console.error("Заголовок не должен содержать больше 50 символов")
             return false
         }
-
+        
         const descValidation1 = (description.replace(/\s/g, "")).length !== 0
         const descValidation2 = description[0] !== " "
-        if (!descValidation1 || !descValidation2) {
-            console.error("Описание не корректно")
+        const descValidation3 = title.length <= 180
+        if (!descValidation1) {
+            console.error("Описание не должно быть пустым")
+            return false
+        } else if (!descValidation2) {
+            console.error("Описание не должно начинаться с пробела")
+            return false
+        } else if (!descValidation3) {
+            console.error("Описание не должно содержать больше 180 символов")
             return false
         }
 
@@ -89,9 +103,15 @@ export default function EditModal({ isOpen, onConfirm, onRequestClose, selectedS
             return false
         }
 
-        const dateValidation = isValid(parse(date, "dd.MM.yyyy", new Date()))
-        if (!dateValidation) {
+        const dateValidation1 = isValid(parse(date, "dd.MM.yyyy", new Date()))
+        const year = Number(date.slice(6, 10))
+        const nowYear = (new Date()).getFullYear()
+        const dateValidation2 = year <= nowYear+15 && year >= nowYear
+        if (!dateValidation1) {
             console.error("Дата не валидна. Введите в формате дд.мм.гггг")
+            return false
+        } else if (!dateValidation2) {
+            console.error(`Год должен быть в диапазоне от ${nowYear} до ${nowYear+15}`)
             return false
         }
 
