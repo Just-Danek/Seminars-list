@@ -58,8 +58,8 @@
    npm run dev
    ```
 
-   --- `json-server` будет работать на [http://localhost:3001](http://localhost:3001).
-   --- Приложение будет работать на [http://localhost:5173](http://localhost:5173).
+   - `json-server` будет работать на [http://localhost:3001](http://localhost:3001).
+   - Приложение будет работать на [http://localhost:5173](http://localhost:5173).
 
 4. **Дополнительные зависимости:**
    Проект использует следующие библиотеки:
