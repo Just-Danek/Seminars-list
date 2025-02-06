@@ -1,0 +1,71 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    background: #a40a3c;
+    padding: 20px;
+    border-radius: 8px;
+    width: 32em;
+}
+
+.modal h2{
+    margin-bottom: 20px;
+}
+
+.modal label {
+    display: block;
+    margin-bottom: 5px;
+    color: #eee;
+    font-size: 25px;
+}
+
+.modal input, textarea {
+    width: 90%;
+    padding: .8em;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.modal-actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+.modal-actions button {
+    width: 6.25em;
+    height: 2.5em;
+    background: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #eee;
+    transition: all .7s;
+}
+.modal-actions button:nth-child(1) {
+    background-color: #eee;
+    color: black;
+    border: 1px solid black;
+}
+.modal-actions button:nth-child(2) {
+    background-color: #ec610a;
+    font-weight: 700;
+}
+.modal-actions button:nth-child(1):hover {
+    background-color: #d8cece;
+}
+.modal-actions button:nth-child(2):hover {
+    background-color: #ffc300;
+    color: black;
+}

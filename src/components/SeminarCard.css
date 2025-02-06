@@ -1,0 +1,55 @@
+.item {
+    width: 30em;
+    background-color: #a40a3c;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3em;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    padding: 1.2em 1.5em 2em;
+}
+
+.item-photo {
+    margin-bottom: 1.5em;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.desc {
+    margin-top: 1em;
+}
+
+.time-info {
+    margin-top: .8em;
+    color: #b8b0b0;
+}
+.date {
+    font-weight: 700;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
+.icons button {
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    outline: none;
+}
+.icon {
+    width: 2em;
+    height: 2em;
+    cursor: pointer;
+    color: #ec610a;
+    transition: all .5s;
+}
+
+.icon:hover {
+    color: #ffc300;
+}

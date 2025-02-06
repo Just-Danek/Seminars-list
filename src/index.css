@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #6b0848;
+    background-color: #360324;
+    font-family: Inter, Verdana, Tahoma, sans-serif;
+}
+
+h1, h2, p {
+    color: #eee;
+    margin: 0;
+}
+
+button, input, textarea {
+    font-family: Inter, Verdana, Tahoma, sans-serif;
+}
+
+textarea {
+    resize: none;
+}
